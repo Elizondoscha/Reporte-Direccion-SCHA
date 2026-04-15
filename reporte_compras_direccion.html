@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporte Ejecutivo de Compras | Direccion</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=1">
+  <link rel="shortcut icon" href="./favicon.ico?v=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png?v=1">
+  <link rel="apple-touch-icon" href="./favicon.png?v=1">
   <style>
     :root {
       --bg: #f4f1ea;
@@ -39,6 +43,28 @@
       box-shadow: var(--shadow);
     }
     .hero { padding: 28px; }
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .hero-brand {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      min-width: 88px;
+    }
+    .hero-brand img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 20px;
+      background: rgba(255,255,255,.86);
+      border: 1px solid rgba(23,59,99,.08);
+      box-shadow: 0 12px 24px rgba(23,35,49,.08);
+      padding: 10px;
+    }
     .eyebrow {
       color: var(--navy-2);
       font-size: 12px;
@@ -214,18 +240,27 @@
       .wrap { padding: 16px 14px 28px; }
       .kpi-grid, .split-grid, .dual-grid, .triple-grid { grid-template-columns: 1fr; }
       .kpi-value { font-size: 30px; }
+      .hero-top { flex-direction: column; }
+      .hero-brand { justify-content: flex-start; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="eyebrow">Compras / Direccion / Seguimiento ejecutivo</div>
-      <h1>Reporte Ejecutivo de Compras para Direccion</h1>
-      <p class="hero-copy" id="heroCopy">
-        Version ejecutiva con lectura directa, menos grafica y mas enfasis en decisiones: compromiso vigente,
-        cobertura financiera, presion por proyecto, proveedores y partidas reales.
-      </p>
+      <div class="hero-top">
+        <div>
+          <div class="eyebrow">Compras / Direccion / Seguimiento ejecutivo</div>
+          <h1>Reporte Ejecutivo de Compras para Direccion</h1>
+          <p class="hero-copy" id="heroCopy">
+            Version ejecutiva con lectura directa, menos grafica y mas enfasis en decisiones: compromiso vigente,
+            cobertura financiera, presion por proyecto, proveedores y partidas reales.
+          </p>
+        </div>
+        <div class="hero-brand">
+          <img src="./favicon.png?v=1" alt="Logo SCHA">
+        </div>
+      </div>
       <div class="chips">
         <span class="chip" id="cutChip">Corte analizado: 15/04/2026</span>
         <span class="chip active" id="viewChip">Vista activa: Todo el periodo</span>
